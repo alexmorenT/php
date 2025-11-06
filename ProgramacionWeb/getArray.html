@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Lenguajes</title>
+</head>
+<body>
+
+    <form action="getArray.php" method="GET">
+        <h3>Selecciona lenguajes (Lista múltiple):</h3>
+        <select name="lenguajes[]" multiple="true" style="height: 80px;">
+            <option value="c">C</option>
+            <option value="java">Java</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+        </select>
+
+        <h3>Selecciona lenguajes (Checkboxes):</h3>
+        <input type="checkbox" name="lenguajes[]" value="c" id="lang_c" /> <label for="lang_c">C</label><br />
+        <input type="checkbox" name="lenguajes[]" value="java" id="lang_java" /> <label for="lang_java">Java</label><br />
+        <input type="checkbox" name="lenguajes[]" value="php" id="lang_php" /> <label for="lang_php">PHP</label><br />
+        <input type="checkbox" name="lenguajes[]" value="python" id="lang_python" /> <label for="lang_python">Python</label><br />
+
+        <br>
+        <button type="submit">Enviar formulario</button>
+    </form>
+
+</body>
+</html>
+

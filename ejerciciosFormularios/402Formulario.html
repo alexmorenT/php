@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="402Formulario.php" method="get">
+        <!-- Nombre -->
+    <p>
+        <label for="nombre">Nombre y apellidos del alumno:</label>
+        <input type="text" name="nombre" id="nombre" value="" />
+    </p>
+        <!-- Email -->
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" name="nombre" id="email" value="" />
+    </p>
+        <!-- URL -->
+    <p>
+        <label for="url">URL página personal: </label>
+        <input type="url" name="nombre" id="url" value="" />
+    </p>
+        <!-- Seleccion de sexo -->
+    <label for="email">Sexo:</label> <br>
+    <input type="radio" name="sexo" value="Hombre" /> Hombre <br>
+    <input type="radio" name="sexo" value="Mujer" /> Mujer <br>
+        <!-- Número de convivientes en el domicilio -->
+    <p>
+        <label for="numeroConvivientes">Número de convivientes en el domicilio:</label>
+        <input type="number" min="0" name="nombre" id="email" value="" />
+    </p>
+        <!-- Aficiones -->
+    <label for="aficiones">Aficiones</label> <br>
+    <input type="checkbox" name="aficiones[]" value="Videojuegos" /> Videojuegos <br>
+    <input type="checkbox" name="aficiones[]" value="Escalar" /> Escalar <br>
+    <input type="checkbox" name="aficiones[]" value="Deportes" /> Deportes <br>
+    <input type="checkbox" name="aficiones[]" value="Lectura" /> Lectura <br> <br>
+        <!-- Menú favorito -->
+    <label for="numeroConvivientes">Menú favorito: </label> <br>
+    <select name="menu[]" multiple="true">
+        <option value="Tostada con jamón">Tostada con jamón</option>
+        <option value="Hamburguesa">Hamburguesa</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Lasaña">Lasaña</option>
+    </select> <br> <br>
+        <!-- Submit -->
+    <input type="submit" name="Enviar" id="enviar">
+
+    </form>
+</body>
+</html>
