@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    form {
+        border: 1px solid black;
+    } 
+
+</style>
 <body>
-    <form action="402Formulario.php" method="get">
+    <table>
+    <form action="402Formulario.php" method="GET">
         <!-- Nombre -->
     <p>
         <label for="nombre">Nombre y apellidos del alumno:</label>
@@ -15,21 +22,21 @@
         <!-- Email -->
     <p>
         <label for="email">Email:</label>
-        <input type="email" name="nombre" id="email" value="" />
+        <input type="email" name="email" id="email" value="" />
     </p>
         <!-- URL -->
     <p>
         <label for="url">URL página personal: </label>
-        <input type="url" name="nombre" id="url" value="" />
+        <input type="url" name="url" id="url" value="" />
     </p>
         <!-- Seleccion de sexo -->
-    <label for="email">Sexo:</label> <br>
+    <label for="sexo">Sexo:</label> <br>
     <input type="radio" name="sexo" value="Hombre" /> Hombre <br>
     <input type="radio" name="sexo" value="Mujer" /> Mujer <br>
         <!-- Número de convivientes en el domicilio -->
     <p>
         <label for="numeroConvivientes">Número de convivientes en el domicilio:</label>
-        <input type="number" min="0" name="nombre" id="email" value="" />
+        <input type="number" min="0" name="numeroConvivientes" id="numeroConvivientes" value="" />
     </p>
         <!-- Aficiones -->
     <label for="aficiones">Aficiones</label> <br>
@@ -38,7 +45,7 @@
     <input type="checkbox" name="aficiones[]" value="Deportes" /> Deportes <br>
     <input type="checkbox" name="aficiones[]" value="Lectura" /> Lectura <br> <br>
         <!-- Menú favorito -->
-    <label for="numeroConvivientes">Menú favorito: </label> <br>
+    <label for="menu">Menú favorito: </label> <br>
     <select name="menu[]" multiple="true">
         <option value="Tostada con jamón">Tostada con jamón</option>
         <option value="Hamburguesa">Hamburguesa</option>
@@ -46,8 +53,9 @@
         <option value="Lasaña">Lasaña</option>
     </select> <br> <br>
         <!-- Submit -->
-    <input type="submit" name="Enviar" id="enviar">
+    <input type="submit" method="GET" name="Enviar" id="enviar">
 
     </form>
+    </table>
 </body>
 </html>
