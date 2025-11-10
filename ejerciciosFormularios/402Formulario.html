@@ -13,26 +13,26 @@
 </style>
 <body>
     <table>
-    <form action="402Formulario.php" method="GET">
+    <form action="403validacion.php" method="GET">
         <!-- Nombre -->
     <p>
         <label for="nombre">Nombre y apellidos del alumno:</label>
-        <input type="text" name="nombre" id="nombre" value="" />
+        <input type="text" name="nombre" id="nombre" value="" required/>
     </p>
         <!-- Email -->
     <p>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" value="" />
+        <input type="email" name="email" id="email" value="" required />
     </p>
         <!-- URL -->
     <p>
         <label for="url">URL página personal: </label>
-        <input type="url" name="url" id="url" value="" />
+        <input type="url" name="url" id="url" value="" required/>
     </p>
         <!-- Seleccion de sexo -->
     <label for="sexo">Sexo:</label> <br>
-    <input type="radio" name="sexo" value="Hombre" /> Hombre <br>
-    <input type="radio" name="sexo" value="Mujer" /> Mujer <br>
+    <input type="radio" name="sexo" value="Hombre" required /> Hombre <br>
+    <input type="radio" name="sexo" value="Mujer"  required /> Mujer <br>
         <!-- Número de convivientes en el domicilio -->
     <p>
         <label for="numeroConvivientes">Número de convivientes en el domicilio:</label>
